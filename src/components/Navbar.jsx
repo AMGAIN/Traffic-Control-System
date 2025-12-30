@@ -5,7 +5,7 @@ import Time from './Time.jsx';
 const Navbar = () => {
     return (
         <>
-            <div className='p-2 flex justify-between border-1'>
+            <div className='p-2 flex justify-between border-1 mb-2'>
 
                 <div>
                     <h1>TRAFFIC COMMAND CENTER</h1>

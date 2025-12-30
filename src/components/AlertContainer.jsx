@@ -5,7 +5,7 @@ import AlertCard from './AlertCard';
 const AlertContainer = () => {
     return (
         <>
-            <div className='w-100 p-2 border-1'>
+            <div className='w-100 p-2 rounded-lg border-1'>
                 <div className='p-1 flex justify-between  '>
                     <div className='flex items-center'>
 

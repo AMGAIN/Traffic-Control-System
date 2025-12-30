@@ -6,7 +6,7 @@ import TrafficMatrics from './TrafficMatrics'
 const MainContainer = () => {
     return (
         <>
-            <div className='p-2 border-1'>
+            <div className='p-2 '>
                 <Map />
                 <TrafficMatrics />
             </div>

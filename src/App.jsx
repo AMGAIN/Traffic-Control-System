@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import AlertContainer from './components/AlertContainer'
 import MainContainer from './components/MainContainer'
+import DetailAlert from './components/DetailAlert'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <div className='flex'>
           <AlertContainer />
           <MainContainer />
+          <DetailAlert/>
         </div>
 
       </div>
