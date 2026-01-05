@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import { MapContainer, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer,Marker } from 'react-leaflet';
 
 const Map = () => {
   const [activeLayer, setActiveLayer] = useState('Heatmap');
   const layers = ['Heatmap', 'Cameras', 'Units'];
 
+  const deviceData ={
+    latitude: 27.717,
+    longitude: 25.3240
+  }
   return (
     <div className="relative h-125 w-full max-w-4xl overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-white">
 
@@ -13,14 +17,15 @@ const Map = () => {
 
         {/* ✅ REAL MAP */}
         <MapContainer
-          center={[27.7172, 85.3240]} // Kathmandu
+          center={[deviceData.latitude, deviceData.longitude]} // Kathmandu
           zoom={13}
           className="h-full w-full z-0"
         >
           <TileLayer
-            attribution="© OpenStreetMap"
+            // attribution="© OpenStreetMap"
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+        <Marker position={[deviceData.latitude, deviceData.longitude]} />
         </MapContainer>
 
         {/* Floating Action Buttons */}
@@ -42,8 +47,8 @@ const Map = () => {
 
         {/* Coordinates Overlay */}
         <div className="absolute bottom-4 right-6 pointer-events-none z-10">
-          <p className="text-[9px] font-mono text-slate-400">
-            27.6710° N, 85.3123° E
+          <p className="text-[9px] font-bold text-red-700">
+            {`${deviceData.latitude}, ${deviceData.longitude}`}
           </p>
         </div>
       </div>
