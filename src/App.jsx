@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import AlertContainer from './components/AlertContainer'
 import MainContainer from './components/MainContainer'
 import DetailAlert from './components/DetailAlert'
+import Login from './components/Login'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <MainContainer />
           <DetailAlert/>
         </div>
+        <Login/>
       </div>
     </>
   )
