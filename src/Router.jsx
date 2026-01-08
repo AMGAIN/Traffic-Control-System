@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
-import Login from "./components/Login";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 
 export const router = createBrowserRouter([

@@ -1,10 +1,10 @@
 import React from 'react';
-import MainContainer from '../components/MainContainer';
+import MainCont from '../components/MainCont.jsx';
 
 function Home() {
   return (
     <>
-      <MainContainer />
+      <MainCont />
     </>
   );
 }
