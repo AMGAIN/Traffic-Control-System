@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
+import Layout from "./pages/Layout";
+import DetailAlert from "./components/DetailAlert";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />, // The shared layout
+    element: <Layout />, // The shared layout
     children: [
       { 
         index: true, 
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       { 
         path: "login", 
         element: <Login /> // Shows at "/login"
+      },
+      { 
+        path: "AlertDetail", 
+        element: <DetailAlert/> // Shows at "/login"
       },
     ],
   },

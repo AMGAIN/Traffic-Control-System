@@ -1,14 +1,15 @@
-import React from 'react'
-import AlertContainer from '../components/AlertContainer'
+import AlertContainer from './AlertContainer'
 import MainContainer from '../components/MainContainer'
-import DetailAlert from '../components/DetailAlert'
+import DetailAlert from './DetailAlert'
+import { useState } from 'react'
 
-function Dashboard() {
+function Layout() {
+  const [alert, setAlert] = useState(null);
 
   return (
     <>
-      <div className="p-2 no-scrollbar bg-gray-300 min-h-screen">
-        <div className='flex flex-col lg:flex-row '>
+      <div className=" no-scrollbar bg-gray-300 min-h-screen">
+        <div className='flex flex-col md:flex-row '>
           <AlertContainer />
           <MainContainer />
           <DetailAlert />
@@ -18,4 +19,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default Layout
