@@ -1,17 +1,14 @@
-import React from 'react'
-import Map from './Map'
-// import SystemStatus from './SystemStatus'
-import TrafficMatrics from './TrafficMatrics'
+import React from "react";
+import MapComponent from "./Map";
+import TrafficMatrics from "./TrafficMatrics";
 
-const MainContainer = () => {
-    return (
-        <>
-            <div className=' w-full my-2 lg:mt-0 lg:px-2 lg:min-w-[400px] xl:min-w-[650px]'>
-                <Map/>
-                <TrafficMatrics />
-            </div>
-        </>
-    )
-}
+const MainContainer = ({ devices = [] }) => {
+  return (
+    <div className="w-full my-2 lg:mt-0 lg:px-2 lg:min-w-[400px] xl:min-w-[650px]">
+      <MapComponent devices={devices} />
+      <TrafficMatrics />
+    </div>
+  );
+};
 
-export default MainContainer
+export default MainContainer;

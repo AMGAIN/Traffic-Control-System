@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       },
       { 
         path: "AlertDetail", 
-        element: <DetailAlert/> // Shows at "/login"
+        element: <DetailAlert/> // Shows for "Specific Alert Details"
       },
     ],
   },
