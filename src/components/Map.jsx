@@ -49,7 +49,7 @@ const MapComponent = ({ devices = [] }) => {
         {/* Info */}
         <div className="absolute bottom-4 right-6 z-10 bg-white/70 px-2 py-1 rounded">
           <p className="text-[10px] font-bold text-slate-700">
-            Active Devices: {devices.length}
+            Crash Alerts form : {devices.length}
           </p>
         </div>
       </div>
